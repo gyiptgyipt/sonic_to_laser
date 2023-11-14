@@ -27,8 +27,16 @@ private:
        
         rclcpp::Time now = this->get_clock()->now();
     
-        // std_msgs::msg::Twist twist;
+        std_msgs::msg::Int32 sonic;
         sensor_msgs::msg::LaserScan laser;
+        
+        auto cm_to_m = sonic.data/100
+        if (cm_to_m >4){
+            cm_to_m = 4;}
+        else if (cm_to_m == 0){
+            cm_to_m = 0.01}
+        
+        auto distance = round(cm_to_m);
 
         rclcpp::Time end = this->get_clock()-now();
         int dt = (end-now).seconds();
@@ -36,13 +44,17 @@ private:
         laser.header.stamp = end;
         laser.header.frame_id = 'sonar';
         laser.angle_min = 0*M_PI/180;
-        laser.angle_max = 165*M_PI/180;1
+        laser.angle_max = 165*M_PI/180;
         laser.angle_increment = M_PI/180;
         laser.time_increment = 0.001;
         laser.scan_time = 0.001;
         laser.range_min = 0.01;
         laser.range_max = 4;
 
+        laser.range = distance;
+
+
+        laser_publisher_->publish(laser);
 
     
         

@@ -101,5 +101,5 @@ void loop() {
 
 
     RCSOFTCHECK(rcl_publish(&publisher, &msg, NULL));
-    msg.data++;
+    msg.data = distance_cm;
 }
