@@ -30,16 +30,16 @@ private:
         std_msgs::msg::Int32 sonic;
         sensor_msgs::msg::LaserScan laser;
         
-        auto cm_to_m = sonic.data/100
+        double cm_to_m = (double)sonic.data/100;
         if (cm_to_m >4){
             cm_to_m = 4;}
         else if (cm_to_m == 0){
-            cm_to_m = 0.01}
+            cm_to_m = 0.01;}
         
-        auto distance = round(cm_to_m);
+        double distance = round(cm_to_m);
 
-        rclcpp::Time end = this->get_clock()-now();
-        int dt = (end-now).seconds();
+        rclcpp::Time end = this->get_clock()->now();
+        auto dt = (end-now).seconds();
 
         laser.header.stamp = end;
         laser.header.frame_id = 'sonar';
@@ -51,7 +51,7 @@ private:
         laser.range_min = 0.01;
         laser.range_max = 4;
 
-        laser.range = distance;
+        laser.ranges.resize = distance;
 
 
         laser_publisher_->publish(laser);

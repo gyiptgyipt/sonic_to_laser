@@ -24,4 +24,12 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+add_executable(sonic_to_laser src/sonic_to_light.cpp)
+ament_target_dependencies(sonic_to_laser rclcpp std_msgs sensor_msgs)
+
+install(DIRECTORY
+  launch
+  DESTINATION share/${PROJECT_NAME}/
+)
+
 ament_package()
