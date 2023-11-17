@@ -39,10 +39,10 @@ private:
         double distance = round(cm_to_m);
 
         rclcpp::Time end = this->get_clock()->now();
-        auto dt = (end-now).seconds();
+        // auto dt = (end-now).seconds();
 
         laser.header.stamp = end;
-        laser.header.frame_id = 'sonar';
+        // laser.header.frame_id = 'sonar';
         laser.angle_min = 0*M_PI/180;
         laser.angle_max = 165*M_PI/180;
         laser.angle_increment = M_PI/180;
@@ -50,6 +50,7 @@ private:
         laser.scan_time = 0.001;
         laser.range_min = 0.01;
         laser.range_max = 4;
+        laser.ranges.push_back(cm_to_m);
         
         laser_publisher_->publish(laser);
 
