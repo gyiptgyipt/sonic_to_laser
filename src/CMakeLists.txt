@@ -27,6 +27,11 @@ endif()
 add_executable(sonic_to_laser src/sonic_to_light.cpp)
 ament_target_dependencies(sonic_to_laser rclcpp std_msgs sensor_msgs)
 
+
+install(TARGETS
+  sonic_to_laser
+  DESTINATION lib/${PROJECT_NAME})
+
 install(DIRECTORY
   #launch
   DESTINATION share/${PROJECT_NAME}/

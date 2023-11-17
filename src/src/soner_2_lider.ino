@@ -6,14 +6,15 @@
 #include <rclc/rclc.h>
 #include <rclc/executor.h>
 
-#include <std_msgs/msg/int32.h>
+#include <std_msgs/msg/float32.h>
+// #include <sensor_msgs/Laserscan.h>
 
 #if !defined(ESP32) && !defined(TARGET_PORTENTA_H7_M7) && !defined(ARDUINO_NANO_RP2040_CONNECT) && !defined(ARDUINO_WIO_TERMINAL)
 #error This example is only avaible for Arduino Portenta, Arduino Nano RP2040 Connect, ESP32 Dev module and Wio Terminal
 #endif
 
 rcl_publisher_t publisher;
-std_msgs__msg__Int32 msg;
+std_msgs__msg__Float32 msg;
 rclc_support_t support;
 rcl_allocator_t allocator;
 rcl_node_t node;
@@ -40,10 +41,10 @@ void timer_callback(rcl_timer_t * timer, int64_t last_call_time)
   }
 }
 
-#define TRIG_PIN 23 // ESP32 pin GPIO23 connected to Ultrasonic Sensor's TRIG pin
-#define ECHO_PIN 22 // ESP32 pin GPIO22 connected to Ultrasonic Sensor's ECHO pin
+#define TRIG_PIN 2 // ESP32 pin GPIO2 connected to Ultrasonic Sensor's TRIG pin
+#define ECHO_PIN 4 // ESP32 pin GPI04 connected to Ultrasonic Sensor's ECHO pin
 
-float duration_us, distance_cm;
+float duration_us, distance_m;
 
 void setup() {
   // begin serial port
@@ -54,7 +55,7 @@ void setup() {
   // configure the echo pin to input mode
   pinMode(ECHO_PIN, INPUT);
 
-  set_microros_wifi_transports("WIFI SSID", "WIFI PASS", "192.168.1.57", 8888);
+  set_microros_wifi_transports("Zyme", "lolspaw7", "192.168.38.102", 8888);
 
   pinMode(LED_PIN, OUTPUT);
   digitalWrite(LED_PIN, HIGH);
@@ -67,14 +68,14 @@ void setup() {
   RCCHECK(rclc_support_init(&support, 0, NULL, &allocator));
 
   // create node
-  RCCHECK(rclc_node_init_default(&node, "micro_ros_arduino_wifi_node", "", &support));
+  RCCHECK(rclc_node_init_default(&node, "sonic_pub", "", &support));
 
   // create publisher
-  RCCHECK(rclc_publisher_init_best_effort(
+  RCCHECK(rclc_publisher_init_default(
     &publisher,
     &node,
-    ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
-    "topic_name"));
+    ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Float32),
+    "/sonar"));
 
   msg.data = 0;
 
@@ -85,21 +86,20 @@ void loop() {
   digitalWrite(TRIG_PIN, HIGH);
   delayMicroseconds(10);
   digitalWrite(TRIG_PIN, LOW);
-
   // measure duration of pulse from ECHO pin
   duration_us = pulseIn(ECHO_PIN, HIGH);
 
   // calculate the distance
-  distance_cm = 0.017 * duration_us;
+  distance_m = 0.017 * duration_us;
 
   // print the value to Serial Monitor
   Serial.print("distance: ");
-  Serial.print(distance_cm);
+  Serial.print(distance_m);
   Serial.println(" cm");
 
   delay(500);
 
 
     RCSOFTCHECK(rcl_publish(&publisher, &msg, NULL));
-    msg.data = distance_cm;
+    msg.data = distance_m;
 }

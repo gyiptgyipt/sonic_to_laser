@@ -4,7 +4,7 @@
 #include <memory>
 
 #include "sensor_msgs/msg/laser_scan.hpp"
-#include "std_msgs/msg/int32.hpp"
+#include "std_msgs/msg/float32.hpp"
 
 
 class rev_tracker : public rclcpp::Node {
@@ -13,8 +13,8 @@ public:
               
         laser_publisher_= this->create_publisher<sensor_msgs::msg::LaserScan>("/laser", 10);
         
-        sonic_subscriber = this->create_subscription<std_msgs::msg::Int32>(
-            "/imu/quaternion", 10, std::bind(&rev_tracker::sensor_callback, this, std::placeholders::_1));
+        sonic_subscriber = this->create_subscription<std_msgs::msg::Float32>(
+            "/sonar", 10, std::bind(&rev_tracker::sensor_callback, this, std::placeholders::_1));
 
 
 
@@ -23,20 +23,21 @@ public:
 private:
 
 
-    void sensor_callback( const std::shared_ptr<std_msgs::msg::Int32> msg) {
+    void sensor_callback( const std::shared_ptr<std_msgs::msg::Float32> msg) {
        
         rclcpp::Time now = this->get_clock()->now();
     
-        std_msgs::msg::Int32 sonic;
+        std_msgs::msg::Float32 sonic;
         sensor_msgs::msg::LaserScan laser;
         
-        double cm_to_m = (double)sonic.data/100;
-        if (cm_to_m >4){
-            cm_to_m = 4;}
-        else if (cm_to_m == 0){
-            cm_to_m = 0.01;}
+        // double cm_to_m = (double)sonic.data/100;
+        // if (cm_to_m >4){
+        //     cm_to_m = 4;}
+        // else if (cm_to_m == 0){
+        //     cm_to_m = 0.01;}
         
-        double distance = round(cm_to_m);
+        //double distance = round(cm_to_m);
+        double distance = round(sonic.data);
 
         rclcpp::Time end = this->get_clock()->now();
         // auto dt = (end-now).seconds();
@@ -50,7 +51,7 @@ private:
         laser.scan_time = 0.001;
         laser.range_min = 0.01;
         laser.range_max = 4;
-        laser.ranges.push_back(cm_to_m);
+        laser.ranges.push_back(distance);
         
         laser_publisher_->publish(laser);
 
@@ -61,7 +62,7 @@ private:
 
 
     rclcpp::Publisher<sensor_msgs::msg::LaserScan>::SharedPtr laser_publisher_;
-    rclcpp::Subscription<std_msgs::msg::Int32>::SharedPtr sonic_subscriber;
+    rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr sonic_subscriber;
 
 };
 

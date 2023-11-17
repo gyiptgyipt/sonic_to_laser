@@ -1,0 +1,148 @@
+[0.000000] (-) TimerEvent: {}
+[0.000843] (sonic_to_laser) JobQueued: {'identifier': 'sonic_to_laser', 'dependencies': OrderedDict()}
+[0.001234] (sonic_to_laser) JobStarted: {'identifier': 'sonic_to_laser'}
+[0.098275] (-) TimerEvent: {}
+[0.100730] (sonic_to_laser) JobProgress: {'identifier': 'sonic_to_laser', 'progress': 'cmake'}
+[0.101705] (sonic_to_laser) JobProgress: {'identifier': 'sonic_to_laser', 'progress': 'build'}
+[0.102464] (sonic_to_laser) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser', '--', '-j12', '-l12'], 'cwd': '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zyme'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zyme/ros_ws/rviz_satellite/install/rviz_satellite/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zyme'), ('OLDPWD', '/home/zyme/ros_ws/sonic2laser'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '8058'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('COLCON_PREFIX_PATH', '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install:/home/zyme/ros_ws/rviz_satellite/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zyme'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zyme'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zyme/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dev:@/tmp/.ICE-unix/1824,unix/dev:/tmp/.ICE-unix/1824'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f073ce00_210f_462f_a448_d0382a0e4277'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.177'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser:/home/zyme/ros_ws/rviz_satellite/install/rviz_satellite:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser:/home/zyme/ros_ws/rviz_satellite/install/rviz_satellite:/opt/ros/humble')]), 'shell': False}
+[0.198391] (-) TimerEvent: {}
+[0.203893] (sonic_to_laser) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/sonic_to_laser.dir/src/sonic_to_light.cpp.o\x1b[0m\n'}
+[0.298565] (-) TimerEvent: {}
+[0.399009] (-) TimerEvent: {}
+[0.499471] (-) TimerEvent: {}
+[0.599880] (-) TimerEvent: {}
+[0.700487] (-) TimerEvent: {}
+[0.801027] (-) TimerEvent: {}
+[0.901981] (-) TimerEvent: {}
+[1.002965] (-) TimerEvent: {}
+[1.103803] (-) TimerEvent: {}
+[1.205002] (-) TimerEvent: {}
+[1.306024] (-) TimerEvent: {}
+[1.406806] (-) TimerEvent: {}
+[1.507396] (-) TimerEvent: {}
+[1.607761] (-) TimerEvent: {}
+[1.708197] (-) TimerEvent: {}
+[1.808900] (-) TimerEvent: {}
+[1.909425] (-) TimerEvent: {}
+[2.010616] (-) TimerEvent: {}
+[2.111837] (-) TimerEvent: {}
+[2.212857] (-) TimerEvent: {}
+[2.313932] (-) TimerEvent: {}
+[2.414760] (-) TimerEvent: {}
+[2.515346] (-) TimerEvent: {}
+[2.616107] (-) TimerEvent: {}
+[2.716839] (-) TimerEvent: {}
+[2.817729] (-) TimerEvent: {}
+[2.917998] (-) TimerEvent: {}
+[3.018280] (-) TimerEvent: {}
+[3.118573] (-) TimerEvent: {}
+[3.218856] (-) TimerEvent: {}
+[3.319122] (-) TimerEvent: {}
+[3.419408] (-) TimerEvent: {}
+[3.519707] (-) TimerEvent: {}
+[3.619993] (-) TimerEvent: {}
+[3.720273] (-) TimerEvent: {}
+[3.819274] (sonic_to_laser) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid rev_tracker::sensor_callback(std::shared_ptr<std_msgs::msg::Int32_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.819442] (sonic_to_laser) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:39:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kdistance\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.819512] (sonic_to_laser) StderrLine: {'line': b'   39 |         double \x1b[01;35m\x1b[Kdistance\x1b[m\x1b[K = round(cm_to_m);\n'}
+[3.819578] (sonic_to_laser) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.819640] (sonic_to_laser) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:26:71:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.819701] (sonic_to_laser) StderrLine: {'line': b'   26 |     void sensor_callback( \x1b[01;35m\x1b[Kconst std::shared_ptr<std_msgs::msg::Int32> msg\x1b[m\x1b[K) {\n'}
+[3.819759] (sonic_to_laser) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.820369] (-) TimerEvent: {}
+[3.920597] (-) TimerEvent: {}
+[4.020856] (-) TimerEvent: {}
+[4.121130] (-) TimerEvent: {}
+[4.221410] (-) TimerEvent: {}
+[4.321698] (-) TimerEvent: {}
+[4.421988] (-) TimerEvent: {}
+[4.522378] (-) TimerEvent: {}
+[4.622658] (-) TimerEvent: {}
+[4.722940] (-) TimerEvent: {}
+[4.823215] (-) TimerEvent: {}
+[4.923498] (-) TimerEvent: {}
+[5.023816] (-) TimerEvent: {}
+[5.124091] (-) TimerEvent: {}
+[5.224360] (-) TimerEvent: {}
+[5.324635] (-) TimerEvent: {}
+[5.425048] (-) TimerEvent: {}
+[5.525727] (-) TimerEvent: {}
+[5.626008] (-) TimerEvent: {}
+[5.726280] (-) TimerEvent: {}
+[5.826533] (-) TimerEvent: {}
+[5.926817] (-) TimerEvent: {}
+[6.027098] (-) TimerEvent: {}
+[6.127443] (-) TimerEvent: {}
+[6.228006] (-) TimerEvent: {}
+[6.328432] (-) TimerEvent: {}
+[6.429060] (-) TimerEvent: {}
+[6.529324] (-) TimerEvent: {}
+[6.629592] (-) TimerEvent: {}
+[6.729859] (-) TimerEvent: {}
+[6.830126] (-) TimerEvent: {}
+[6.930380] (-) TimerEvent: {}
+[7.030633] (-) TimerEvent: {}
+[7.130884] (-) TimerEvent: {}
+[7.231150] (-) TimerEvent: {}
+[7.331407] (-) TimerEvent: {}
+[7.431667] (-) TimerEvent: {}
+[7.531940] (-) TimerEvent: {}
+[7.632212] (-) TimerEvent: {}
+[7.732486] (-) TimerEvent: {}
+[7.832927] (-) TimerEvent: {}
+[7.933398] (-) TimerEvent: {}
+[8.033629] (-) TimerEvent: {}
+[8.133901] (-) TimerEvent: {}
+[8.234162] (-) TimerEvent: {}
+[8.334431] (-) TimerEvent: {}
+[8.434719] (-) TimerEvent: {}
+[8.534988] (-) TimerEvent: {}
+[8.635248] (-) TimerEvent: {}
+[8.735506] (-) TimerEvent: {}
+[8.835802] (-) TimerEvent: {}
+[8.936158] (-) TimerEvent: {}
+[9.036800] (-) TimerEvent: {}
+[9.137316] (-) TimerEvent: {}
+[9.237635] (-) TimerEvent: {}
+[9.337956] (-) TimerEvent: {}
+[9.438292] (-) TimerEvent: {}
+[9.538593] (-) TimerEvent: {}
+[9.558543] (sonic_to_laser) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable sonic_to_laser\x1b[0m\n'}
+[9.638722] (-) TimerEvent: {}
+[9.739041] (-) TimerEvent: {}
+[9.839399] (-) TimerEvent: {}
+[9.939656] (-) TimerEvent: {}
+[10.039932] (-) TimerEvent: {}
+[10.083307] (sonic_to_laser) StdoutLine: {'line': b'[100%] Built target sonic_to_laser\n'}
+[10.099652] (sonic_to_laser) CommandEnded: {'returncode': 0}
+[10.133812] (sonic_to_laser) JobProgress: {'identifier': 'sonic_to_laser', 'progress': 'install'}
+[10.140057] (-) TimerEvent: {}
+[10.147935] (sonic_to_laser) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser'], 'cwd': '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zyme'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zyme/ros_ws/rviz_satellite/install/rviz_satellite/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zyme'), ('OLDPWD', '/home/zyme/ros_ws/sonic2laser'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '8058'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('COLCON_PREFIX_PATH', '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install:/home/zyme/ros_ws/rviz_satellite/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zyme'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zyme'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zyme/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dev:@/tmp/.ICE-unix/1824,unix/dev:/tmp/.ICE-unix/1824'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f073ce00_210f_462f_a448_d0382a0e4277'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.177'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser:/home/zyme/ros_ws/rviz_satellite/install/rviz_satellite:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser:/home/zyme/ros_ws/rviz_satellite/install/rviz_satellite:/opt/ros/humble')]), 'shell': False}
+[10.158783] (sonic_to_laser) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.159420] (sonic_to_laser) StdoutLine: {'line': b'-- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/lib/sonic_to_laser/sonic_to_laser\n'}
+[10.169200] (sonic_to_laser) StdoutLine: {'line': b'-- Set runtime path of "/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/lib/sonic_to_laser/sonic_to_laser" to ""\n'}
+[10.169752] (sonic_to_laser) StdoutLine: {'line': b'-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/\n'}
+[10.169986] (sonic_to_laser) StdoutLine: {'line': b'-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/ament_index/resource_index/package_run_dependencies/sonic_to_laser\n'}
+[10.170125] (sonic_to_laser) StdoutLine: {'line': b'-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/ament_index/resource_index/parent_prefix_path/sonic_to_laser\n'}
+[10.170419] (sonic_to_laser) StdoutLine: {'line': b'-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/environment/ament_prefix_path.sh\n'}
+[10.170683] (sonic_to_laser) StdoutLine: {'line': b'-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/environment/ament_prefix_path.dsv\n'}
+[10.170806] (sonic_to_laser) StdoutLine: {'line': b'-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/environment/path.sh\n'}
+[10.170918] (sonic_to_laser) StdoutLine: {'line': b'-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/environment/path.dsv\n'}
+[10.171030] (sonic_to_laser) StdoutLine: {'line': b'-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/local_setup.bash\n'}
+[10.171140] (sonic_to_laser) StdoutLine: {'line': b'-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/local_setup.sh\n'}
+[10.171252] (sonic_to_laser) StdoutLine: {'line': b'-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/local_setup.zsh\n'}
+[10.171363] (sonic_to_laser) StdoutLine: {'line': b'-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/local_setup.dsv\n'}
+[10.171471] (sonic_to_laser) StdoutLine: {'line': b'-- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/package.dsv\n'}
+[10.171604] (sonic_to_laser) StdoutLine: {'line': b'-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/ament_index/resource_index/packages/sonic_to_laser\n'}
+[10.171725] (sonic_to_laser) StdoutLine: {'line': b'-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/cmake/sonic_to_laserConfig.cmake\n'}
+[10.171835] (sonic_to_laser) StdoutLine: {'line': b'-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/cmake/sonic_to_laserConfig-version.cmake\n'}
+[10.171945] (sonic_to_laser) StdoutLine: {'line': b'-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/package.xml\n'}
+[10.173440] (sonic_to_laser) CommandEnded: {'returncode': 0}
+[10.240632] (-) TimerEvent: {}
+[10.341778] (-) TimerEvent: {}
+[10.443438] (-) TimerEvent: {}
+[10.545388] (-) TimerEvent: {}
+[10.646292] (-) TimerEvent: {}
+[10.747061] (-) TimerEvent: {}
+[10.792453] (sonic_to_laser) JobEnded: {'identifier': 'sonic_to_laser', 'rc': 0}
+[10.794402] (-) EventReactorShutdown: {}

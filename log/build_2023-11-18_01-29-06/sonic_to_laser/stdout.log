@@ -1,0 +1,22 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/sonic_to_laser.dir/src/sonic_to_light.cpp.o[0m
+[100%] [32m[1mLinking CXX executable sonic_to_laser[0m
+[100%] Built target sonic_to_laser
+-- Install configuration: ""
+-- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/lib/sonic_to_laser/sonic_to_laser
+-- Set runtime path of "/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/lib/sonic_to_laser/sonic_to_laser" to ""
+-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/
+-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/ament_index/resource_index/package_run_dependencies/sonic_to_laser
+-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/ament_index/resource_index/parent_prefix_path/sonic_to_laser
+-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/environment/ament_prefix_path.sh
+-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/environment/path.sh
+-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/environment/path.dsv
+-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/local_setup.bash
+-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/local_setup.sh
+-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/local_setup.zsh
+-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/local_setup.dsv
+-- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/package.dsv
+-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/ament_index/resource_index/packages/sonic_to_laser
+-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/cmake/sonic_to_laserConfig.cmake
+-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/cmake/sonic_to_laserConfig-version.cmake
+-- Up-to-date: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/package.xml

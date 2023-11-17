@@ -1,0 +1,77 @@
+[0.071s] Invoking command in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zyme/ros_ws/sonic2laser/sonic_to_laser/src -DCMAKE_INSTALL_PREFIX=/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser
+[0.306s] -- The C compiler identification is GNU 11.4.0
+[0.588s] -- The CXX compiler identification is GNU 11.4.0
+[0.621s] -- Detecting C compiler ABI info
+[0.892s] -- Detecting C compiler ABI info - done
+[0.924s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.925s] -- Detecting C compile features
+[0.927s] -- Detecting C compile features - done
+[0.940s] -- Detecting CXX compiler ABI info
+[1.248s] -- Detecting CXX compiler ABI info - done
+[1.278s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.279s] -- Detecting CXX compile features
+[1.281s] -- Detecting CXX compile features - done
+[1.295s] -- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.958s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter 
+[2.313s] -- Found rclcpp: 16.0.6 (/opt/ros/humble/share/rclcpp/cmake)
+[2.500s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.520s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.557s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.618s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.698s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.943s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.949s] -- Found rmw_fastrtps_cpp: 6.2.4 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.209s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.311s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.492s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.532s] -- Looking for pthread.h
+[3.814s] -- Looking for pthread.h - found
+[3.817s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.098s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.102s] -- Found Threads: TRUE  
+[4.565s] -- Found rclpy: 3.3.10 (/opt/ros/humble/share/rclpy/cmake)
+[4.567s] -- Found sensor_msgs: 4.2.3 (/opt/ros/humble/share/sensor_msgs/cmake)
+[4.755s] -- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[4.881s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.882s] -- Configured cppcheck include dirs: 
+[4.882s] -- Configured cppcheck exclude dirs and/or files: 
+[4.886s] -- Added test 'lint_cmake' to check CMake code style
+[4.889s] -- Added test 'uncrustify' to check C / C++ code style
+[4.890s] -- Configured uncrustify additional arguments: 
+[4.891s] -- Added test 'xmllint' to check XML markup files
+[4.896s] -- Configuring done
+[4.930s] -- Generating done
+[4.935s] -- Build files have been written to: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser
+[4.961s] Invoked command in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/zyme/ros_ws/sonic2laser/sonic_to_laser/src -DCMAKE_INSTALL_PREFIX=/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser
+[4.967s] Invoking command in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser -- -j12 -l12
+[5.152s] [ 50%] [32mBuilding CXX object CMakeFiles/sonic_to_laser.dir/src/sonic_to_light.cpp.o[0m
+[8.269s] [01m[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:[m[K In member function ‘[01m[Kvoid rev_tracker::sensor_callback(std::shared_ptr<std_msgs::msg::Int32_<std::allocator<void> > >)[m[K’:
+[8.269s] [01m[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:39:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdistance[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+[8.269s]    39 |         double [01;35m[Kdistance[m[K = round(cm_to_m);
+[8.270s]       |                [01;35m[K^~~~~~~~[m[K
+[8.270s] [01m[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:26:71:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[8.270s]    26 | oid sensor_callback( [01;35m[Kconst std::shared_ptr<std_msgs::msg::Int32> msg[m[K) {
+[8.270s]       |                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[8.270s] 
+[13.831s] [100%] [32m[1mLinking CXX executable sonic_to_laser[0m
+[14.708s] [100%] Built target sonic_to_laser
+[14.718s] Invoked command in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser -- -j12 -l12
+[14.759s] Invoking command in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser
+[14.770s] -- Install configuration: ""
+[14.770s] -- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/
+[14.770s] -- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/ament_index/resource_index/package_run_dependencies/sonic_to_laser
+[14.770s] -- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/ament_index/resource_index/parent_prefix_path/sonic_to_laser
+[14.771s] -- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/environment/ament_prefix_path.sh
+[14.771s] -- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/environment/ament_prefix_path.dsv
+[14.772s] -- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/environment/path.sh
+[14.772s] -- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/environment/path.dsv
+[14.772s] -- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/local_setup.bash
+[14.772s] -- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/local_setup.sh
+[14.772s] -- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/local_setup.zsh
+[14.773s] -- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/local_setup.dsv
+[14.773s] -- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/package.dsv
+[14.773s] -- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/ament_index/resource_index/packages/sonic_to_laser
+[14.774s] -- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/cmake/sonic_to_laserConfig.cmake
+[14.774s] -- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/cmake/sonic_to_laserConfig-version.cmake
+[14.774s] -- Installing: /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/package.xml
+[14.777s] Invoked command in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser

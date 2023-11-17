@@ -1,0 +1,100 @@
+[0.000000] (-) TimerEvent: {}
+[0.000140] (sonic_to_laser) JobQueued: {'identifier': 'sonic_to_laser', 'dependencies': OrderedDict()}
+[0.000225] (sonic_to_laser) JobStarted: {'identifier': 'sonic_to_laser'}
+[0.097403] (sonic_to_laser) JobProgress: {'identifier': 'sonic_to_laser', 'progress': 'cmake'}
+[0.097954] (sonic_to_laser) JobProgress: {'identifier': 'sonic_to_laser', 'progress': 'build'}
+[0.098640] (sonic_to_laser) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser', '--', '-j12', '-l12'], 'cwd': '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'zyme'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/zyme/ros_ws/rviz_satellite/install/rviz_satellite/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/zyme'), ('OLDPWD', '/home/zyme/ros_ws/sonic2laser'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('SYSTEMD_EXEC_PID', '8058'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('QT_QPA_PLATFORMTHEME', 'qt5ct'), ('COLCON_PREFIX_PATH', '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install:/home/zyme/ros_ws/rviz_satellite/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'zyme'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'zyme'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/zyme/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/dev:@/tmp/.ICE-unix/1824,unix/dev:/tmp/.ICE-unix/1824'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f073ce00_210f_462f_a448_d0382a0e4277'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.177'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser:/home/zyme/ros_ws/rviz_satellite/install/rviz_satellite:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser:/home/zyme/ros_ws/rviz_satellite/install/rviz_satellite:/opt/ros/humble')]), 'shell': False}
+[0.101625] (-) TimerEvent: {}
+[0.158673] (sonic_to_laser) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sonic_to_laser\x1b[0m\n'}
+[0.201830] (-) TimerEvent: {}
+[0.216345] (sonic_to_laser) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/sonic_to_laser.dir/src/sonic_to_light.cpp.o\x1b[0m\n'}
+[0.302045] (-) TimerEvent: {}
+[0.402679] (-) TimerEvent: {}
+[0.503434] (-) TimerEvent: {}
+[0.604514] (-) TimerEvent: {}
+[0.705238] (-) TimerEvent: {}
+[0.805572] (-) TimerEvent: {}
+[0.905954] (-) TimerEvent: {}
+[1.006670] (-) TimerEvent: {}
+[1.107708] (-) TimerEvent: {}
+[1.208559] (-) TimerEvent: {}
+[1.309282] (-) TimerEvent: {}
+[1.410066] (-) TimerEvent: {}
+[1.510727] (-) TimerEvent: {}
+[1.611598] (-) TimerEvent: {}
+[1.712109] (-) TimerEvent: {}
+[1.812431] (-) TimerEvent: {}
+[1.912723] (-) TimerEvent: {}
+[2.013044] (-) TimerEvent: {}
+[2.113380] (-) TimerEvent: {}
+[2.213680] (-) TimerEvent: {}
+[2.313997] (-) TimerEvent: {}
+[2.414310] (-) TimerEvent: {}
+[2.514728] (-) TimerEvent: {}
+[2.615389] (-) TimerEvent: {}
+[2.715686] (-) TimerEvent: {}
+[2.816016] (-) TimerEvent: {}
+[2.916317] (-) TimerEvent: {}
+[3.016596] (-) TimerEvent: {}
+[3.116900] (-) TimerEvent: {}
+[3.217195] (-) TimerEvent: {}
+[3.317472] (-) TimerEvent: {}
+[3.391325] (sonic_to_laser) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:64:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kfloat32\x1b[m\x1b[K\xe2\x80\x99 is not a member of \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[KFloat32\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.391502] (sonic_to_laser) StderrLine: {'line': b'   64 |     rclcpp::Subscription<std_msgs::msg::\x1b[01;31m\x1b[Kfloat32\x1b[m\x1b[K>::SharedPtr sonic_subscriber;\n'}
+[3.391568] (sonic_to_laser) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[3.391626] (sonic_to_laser) StderrLine: {'line': b'      |                                         \x1b[32m\x1b[KFloat32\x1b[m\x1b[K\n'}
+[3.391684] (sonic_to_laser) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:64:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[3.391741] (sonic_to_laser) StderrLine: {'line': b'   64 |     rclcpp::Subscription<std_msgs::msg::float32\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr sonic_subscriber;\n'}
+[3.391797] (sonic_to_laser) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.391851] (sonic_to_laser) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:64:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 3 is invalid\n'}
+[3.391911] (sonic_to_laser) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:64:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 4 is invalid\n'}
+[3.391966] (sonic_to_laser) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:64:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 5 is invalid\n'}
+[3.392020] (sonic_to_laser) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:64:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[3.392076] (sonic_to_laser) StderrLine: {'line': b'   64 |     rclcpp::Subscription<std_msgs::msg::float32>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K sonic_subscriber;\n'}
+[3.392130] (sonic_to_laser) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[3.392184] (sonic_to_laser) StderrLine: {'line': b'      |                                                            \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[3.394203] (sonic_to_laser) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:64:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksonic_subscriber\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.394301] (sonic_to_laser) StderrLine: {'line': b'   64 |     rclcpp::Subscription<std_msgs::msg::float32>::SharedPtr \x1b[01;31m\x1b[Ksonic_subscriber\x1b[m\x1b[K;\n'}
+[3.394363] (sonic_to_laser) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.404461] (sonic_to_laser) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[Krev_tracker::rev_tracker()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.404999] (sonic_to_laser) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:16:9:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksonic_subscriber\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcount_subscribers\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.405096] (sonic_to_laser) StderrLine: {'line': b'   16 |         \x1b[01;31m\x1b[Ksonic_subscriber\x1b[m\x1b[K = this->create_subscription<std_msgs::msg::Float32>(\n'}
+[3.405160] (sonic_to_laser) StderrLine: {'line': b'      |         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.405220] (sonic_to_laser) StderrLine: {'line': b'      |         \x1b[32m\x1b[Kcount_subscribers\x1b[m\x1b[K\n'}
+[3.417600] (-) TimerEvent: {}
+[3.451229] (sonic_to_laser) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid rev_tracker::sensor_callback(std::shared_ptr<std_msgs::msg::Float32_<std::allocator<void> > >)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.451397] (sonic_to_laser) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:39:16:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kdistance\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.451465] (sonic_to_laser) StderrLine: {'line': b'   39 |         double \x1b[01;35m\x1b[Kdistance\x1b[m\x1b[K = round(cm_to_m);\n'}
+[3.451523] (sonic_to_laser) StderrLine: {'line': b'      |                \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[3.451578] (sonic_to_laser) StderrLine: {'line': b'\x1b[01m\x1b[K/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/src/sonic_to_light.cpp:26:73:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kmsg\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.451651] (sonic_to_laser) StderrLine: {'line': b'   26 |     void sensor_callback( \x1b[01;35m\x1b[Kconst std::shared_ptr<std_msgs::msg::Float32> msg\x1b[m\x1b[K) {\n'}
+[3.451708] (sonic_to_laser) StderrLine: {'line': b'      |                           \x1b[01;35m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~\x1b[m\x1b[K\n'}
+[3.517724] (-) TimerEvent: {}
+[3.618014] (-) TimerEvent: {}
+[3.718248] (-) TimerEvent: {}
+[3.818514] (-) TimerEvent: {}
+[3.918787] (-) TimerEvent: {}
+[4.019104] (-) TimerEvent: {}
+[4.119892] (-) TimerEvent: {}
+[4.220861] (-) TimerEvent: {}
+[4.321754] (-) TimerEvent: {}
+[4.422224] (-) TimerEvent: {}
+[4.522864] (-) TimerEvent: {}
+[4.623155] (-) TimerEvent: {}
+[4.723425] (-) TimerEvent: {}
+[4.823708] (-) TimerEvent: {}
+[4.924006] (-) TimerEvent: {}
+[5.024280] (-) TimerEvent: {}
+[5.124568] (-) TimerEvent: {}
+[5.224847] (-) TimerEvent: {}
+[5.325127] (-) TimerEvent: {}
+[5.425400] (-) TimerEvent: {}
+[5.525804] (-) TimerEvent: {}
+[5.626498] (-) TimerEvent: {}
+[5.713314] (sonic_to_laser) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/sonic_to_laser.dir/build.make:76: CMakeFiles/sonic_to_laser.dir/src/sonic_to_light.cpp.o] Error 1\n'}
+[5.713535] (sonic_to_laser) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sonic_to_laser.dir/all] Error 2\n'}
+[5.713737] (sonic_to_laser) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.716287] (sonic_to_laser) CommandEnded: {'returncode': 2}
+[5.726607] (-) TimerEvent: {}
+[5.806620] (sonic_to_laser) JobEnded: {'identifier': 'sonic_to_laser', 'rc': 2}
+[5.817239] (-) EventReactorShutdown: {}
