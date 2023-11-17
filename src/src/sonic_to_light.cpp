@@ -50,32 +50,11 @@ private:
         laser.scan_time = 0.001;
         laser.range_min = 0.01;
         laser.range_max = 4;
-
-        laser.ranges.resize = distance;
-
-
+        
         laser_publisher_->publish(laser);
 
     
         
-        // transform_stamped.header.stamp = this->get_clock()->now();
-
-
-
-
-        // RCLCPP_INFO(this->get_logger(), "I heard: X : '%f' Y : '%f' Z : '%f", roll,pitch,yaw);
-
-
-        // auto lin_vel_x = msg->angular_velocity.x * wheel_radius ;
-        // auto lin_vel_y = msg->angular_velocity.y * wheel_radius ;
-
-        // // auto dis_x = lin_vel_x * time_now;
-        // twist.linear.x = lin_vel_x;
-        // twist.linear.y = lin_vel_y;
-        // //twist.angular.z = msg->angular_velocity.z;
-
-        // publisher_->publish(twist);
-
 
     }
 
