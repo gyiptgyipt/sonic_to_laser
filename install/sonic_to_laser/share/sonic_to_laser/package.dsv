@@ -1,8 +1,0 @@
-source;share/sonic_to_laser/hook/cmake_prefix_path.ps1
-source;share/sonic_to_laser/hook/cmake_prefix_path.dsv
-source;share/sonic_to_laser/hook/cmake_prefix_path.sh
-source;share/sonic_to_laser/local_setup.bash
-source;share/sonic_to_laser/local_setup.dsv
-source;share/sonic_to_laser/local_setup.ps1
-source;share/sonic_to_laser/local_setup.sh
-source;share/sonic_to_laser/local_setup.zsh

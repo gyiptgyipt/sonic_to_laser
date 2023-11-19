@@ -11,6 +11,9 @@ find_package(rclcpp REQUIRED)
 find_package(rclpy REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(tf2_ros REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -25,7 +28,7 @@ if(BUILD_TESTING)
 endif()
 
 add_executable(sonic_to_laser src/sonic_to_light.cpp)
-ament_target_dependencies(sonic_to_laser rclcpp std_msgs sensor_msgs)
+ament_target_dependencies(sonic_to_laser rclcpp std_msgs sensor_msgs geometry_msgs tf2 tf2_ros)
 
 
 install(TARGETS

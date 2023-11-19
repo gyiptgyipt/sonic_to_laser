@@ -5,16 +5,21 @@
 
 #include "sensor_msgs/msg/laser_scan.hpp"
 #include "std_msgs/msg/float32.hpp"
+#include "geometry_msgs/msg/transform_stamped.hpp"
+#include "tf2/LinearMath/Quaternion.h"
+#include "tf2_ros/transform_broadcaster.h"
 
 
-class rev_tracker : public rclcpp::Node {
+class S2L_converter : public rclcpp::Node {
 public:
-    rev_tracker(): Node("rev_tracker") {
+    S2L_converter(): Node("S2L_converter") {
               
         laser_publisher_= this->create_publisher<sensor_msgs::msg::LaserScan>("/laser", 10);
         
         sonic_subscriber = this->create_subscription<std_msgs::msg::Float32>(
-            "/sonar", 10, std::bind(&rev_tracker::sensor_callback, this, std::placeholders::_1));
+            "/sonar", 10, std::bind(&S2L_converter::sensor_callback, this, std::placeholders::_1));
+
+        tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(this);
 
 
 
@@ -25,25 +30,28 @@ private:
 
     void sensor_callback( const std::shared_ptr<std_msgs::msg::Float32> msg) {
        
-        rclcpp::Time now = this->get_clock()->now();
-    
-        std_msgs::msg::Float32 sonic;
+
+        // Sensor part
+
+        // rclcpp::Time now = this->get_clock()->now();
+        // std_msgs::msg::Float32 sonic;
         sensor_msgs::msg::LaserScan laser;
         
-        // double cm_to_m = (double)sonic.data/100;
-        // if (cm_to_m >4){
-        //     cm_to_m = 4;}
-        // else if (cm_to_m == 0){
-        //     cm_to_m = 0.01;}
+        double cm_to_m = (double)msg->data/100;
+        if (cm_to_m >4){
+            cm_to_m = 4;}
+        else if (cm_to_m == 0){
+            cm_to_m = 0.01;}
         
-        //double distance = round(cm_to_m);
-        double distance = round(sonic.data);
+        // double distance = ("%.1f",round(cm_to_m));
+        double distance = std::ceil(cm_to_m *100.0)/100.0;
 
         rclcpp::Time end = this->get_clock()->now();
         // auto dt = (end-now).seconds();
 
         laser.header.stamp = end;
-        // laser.header.frame_id = 'sonar';
+        laser.header.frame_id = "laser_frame";
+
         laser.angle_min = 0*M_PI/180;
         laser.angle_max = 165*M_PI/180;
         laser.angle_increment = M_PI/180;
@@ -55,6 +63,31 @@ private:
         
         laser_publisher_->publish(laser);
 
+        // Transform part
+
+        geometry_msgs::msg::TransformStamped transform_stamped;
+
+        transform_stamped.header.stamp = this->get_clock()->now();
+        transform_stamped.header.frame_id ="imu_frame_bridge";  // Parent frame
+        transform_stamped.child_frame_id = "laser_frame";   // Child frame
+        transform_stamped.transform.translation.x = 0;  
+        transform_stamped.transform.translation.y = 0;
+        transform_stamped.transform.translation.z = 0.0; //msg->linear_acceleration.z;
+
+        tf2::Quaternion q;
+        q.setRPY(0, 0, 0);
+        transform_stamped.transform.rotation.x = q.x();
+        transform_stamped.transform.rotation.y = q.y();
+        transform_stamped.transform.rotation.z = q.z();
+        transform_stamped.transform.rotation.w = q.w();
+        // RCLCPP_INFO(this->get_logger(), "I heard: '%f'", msg->angular_velocity.y);
+
+        
+        // transform_stamped.transform.rotation = tf2::toMsg(tf_orientation);
+
+        // Broadcast the transformation
+        tf_broadcaster_->sendTransform(transform_stamped);
+
     
         
 
@@ -63,12 +96,13 @@ private:
 
     rclcpp::Publisher<sensor_msgs::msg::LaserScan>::SharedPtr laser_publisher_;
     rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr sonic_subscriber;
+    std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
 
 };
 
 int main(int argc, char** argv) {
     rclcpp::init(argc, argv);
-    rclcpp::spin(std::make_shared<rev_tracker>());
+    rclcpp::spin(std::make_shared<S2L_converter>());
     rclcpp::shutdown();
     return 0;
 }
