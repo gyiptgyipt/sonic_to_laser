@@ -37,14 +37,14 @@ private:
         // std_msgs::msg::Float32 sonic;
         sensor_msgs::msg::LaserScan laser;
         
-        double cm_to_m = (double)msg->data/100;
+        _Float32 cm_to_m = (_Float32)msg->data/100;
         if (cm_to_m >4){
             cm_to_m = 4;}
         else if (cm_to_m == 0){
             cm_to_m = 0.01;}
         
         // double distance = ("%.1f",round(cm_to_m));
-        double distance = std::ceil(cm_to_m *100.0)/100.0;
+        _Float32 distance = std::ceil(cm_to_m *100.0)/100.0;
 
         rclcpp::Time end = this->get_clock()->now();
         // auto dt = (end-now).seconds();
@@ -60,6 +60,8 @@ private:
         laser.range_min = 0.01;
         laser.range_max = 4;
         laser.ranges.push_back(distance);
+        laser.ranges.resize(distance/laser.angle_increment);
+        // laser.intensities.resize(distance);
         
         laser_publisher_->publish(laser);
 
@@ -71,7 +73,7 @@ private:
         transform_stamped.header.frame_id ="imu_frame_bridge";  // Parent frame
         transform_stamped.child_frame_id = "laser_frame";   // Child frame
         transform_stamped.transform.translation.x = 0;  
-        transform_stamped.transform.translation.y = 0;
+        transform_stamped.transform.translation.y = 0.02;
         transform_stamped.transform.translation.z = 0.0; //msg->linear_acceleration.z;
 
         tf2::Quaternion q;
@@ -96,7 +98,7 @@ private:
 
     rclcpp::Publisher<sensor_msgs::msg::LaserScan>::SharedPtr laser_publisher_;
     rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr sonic_subscriber;
-    std::unique_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
+    std::shared_ptr<tf2_ros::TransformBroadcaster> tf_broadcaster_;
 
 };
 
