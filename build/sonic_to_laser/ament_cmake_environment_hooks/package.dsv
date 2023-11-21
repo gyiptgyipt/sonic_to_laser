@@ -1,0 +1,4 @@
+source;share/sonic_to_laser/local_setup.bash
+source;share/sonic_to_laser/local_setup.dsv
+source;share/sonic_to_laser/local_setup.sh
+source;share/sonic_to_laser/local_setup.zsh

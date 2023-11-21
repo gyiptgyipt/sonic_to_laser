@@ -1,0 +1,6 @@
+[31mCMake Error at cmake_install.cmake:105 (file):
+  file INSTALL cannot find
+  "/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/sonic2laser_map/config":
+  No such file or directory.
+
+[0m

@@ -1,0 +1,234 @@
+[1.010s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.010s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=12, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fd541fec880>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fd541feecb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fd541feecb0>>)
+[1.056s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.056s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.056s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.056s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.056s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.056s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.056s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.057s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.066s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.067s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonic2laser_map) by extensions ['ignore', 'ignore_ament_install']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonic2laser_map) by extension 'ignore'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonic2laser_map) by extension 'ignore_ament_install'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonic2laser_map) by extensions ['colcon_pkg']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonic2laser_map) by extension 'colcon_pkg'
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonic2laser_map) by extensions ['colcon_meta']
+[1.068s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonic2laser_map) by extension 'colcon_meta'
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonic2laser_map) by extensions ['ros']
+[1.069s] Level 1:colcon.colcon_core.package_identification:_identify(src/sonic2laser_map) by extension 'ros'
+[1.071s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sonic2laser_map' with type 'ros.ament_cmake' and name 'sonic2laser_map'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar) by extensions ['ignore', 'ignore_ament_install']
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar) by extension 'ignore'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar) by extension 'ignore_ament_install'
+[1.071s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar) by extensions ['colcon_pkg']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar) by extension 'colcon_pkg'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar) by extensions ['colcon_meta']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar) by extension 'colcon_meta'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar) by extensions ['ros']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar) by extension 'ros'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar) by extensions ['cmake', 'python']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar) by extension 'cmake'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar) by extension 'python'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar) by extensions ['python_setup_py']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar) by extension 'python_setup_py'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar/src) by extensions ['ignore', 'ignore_ament_install']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar/src) by extension 'ignore'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar/src) by extension 'ignore_ament_install'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar/src) by extensions ['colcon_pkg']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar/src) by extension 'colcon_pkg'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar/src) by extensions ['colcon_meta']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar/src) by extension 'colcon_meta'
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar/src) by extensions ['ros']
+[1.072s] Level 1:colcon.colcon_core.package_identification:_identify(src/ultrasonic_to_lidar/src) by extension 'ros'
+[1.073s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ultrasonic_to_lidar/src' with type 'ros.ament_cmake' and name 'sonic_to_laser'
+[1.073s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['ignore', 'ignore_ament_install']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ignore'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ignore_ament_install'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['colcon_pkg']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'colcon_pkg'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['colcon_meta']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'colcon_meta'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['ros']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'ros'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['cmake', 'python']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'cmake'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'python'
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extensions ['python_setup_py']
+[1.074s] Level 1:colcon.colcon_core.package_identification:_identify(test) by extension 'python_setup_py'
+[1.074s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.074s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.074s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.074s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.074s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.167s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.167s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.199s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/zyme/ros_ws/sonic2laser/sonic_to_laser/install
+[1.215s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/zyme/ros_ws/microros_ws/install
+[1.230s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/zyme/ros_ws/rviz_satellite/install
+[1.253s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/zyme/ros_ws/Gyro_micro_ros/install
+[1.269s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 446 installed packages in /opt/ros/humble
+[1.271s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.378s] Level 5:colcon.colcon_core.verb:set package 'sonic2laser_map' build argument 'cmake_args' from command line to 'None'
+[1.378s] Level 5:colcon.colcon_core.verb:set package 'sonic2laser_map' build argument 'cmake_target' from command line to 'None'
+[1.378s] Level 5:colcon.colcon_core.verb:set package 'sonic2laser_map' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.378s] Level 5:colcon.colcon_core.verb:set package 'sonic2laser_map' build argument 'cmake_clean_cache' from command line to 'False'
+[1.378s] Level 5:colcon.colcon_core.verb:set package 'sonic2laser_map' build argument 'cmake_clean_first' from command line to 'False'
+[1.378s] Level 5:colcon.colcon_core.verb:set package 'sonic2laser_map' build argument 'cmake_force_configure' from command line to 'False'
+[1.378s] Level 5:colcon.colcon_core.verb:set package 'sonic2laser_map' build argument 'ament_cmake_args' from command line to 'None'
+[1.378s] Level 5:colcon.colcon_core.verb:set package 'sonic2laser_map' build argument 'catkin_cmake_args' from command line to 'None'
+[1.378s] Level 5:colcon.colcon_core.verb:set package 'sonic2laser_map' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.378s] DEBUG:colcon.colcon_core.verb:Building package 'sonic2laser_map' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic2laser_map', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map', 'merge_install': False, 'path': '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/sonic2laser_map', 'symlink_install': False, 'test_result_base': None}
+[1.394s] Level 5:colcon.colcon_core.verb:set package 'sonic_to_laser' build argument 'cmake_args' from command line to 'None'
+[1.394s] Level 5:colcon.colcon_core.verb:set package 'sonic_to_laser' build argument 'cmake_target' from command line to 'None'
+[1.394s] Level 5:colcon.colcon_core.verb:set package 'sonic_to_laser' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.394s] Level 5:colcon.colcon_core.verb:set package 'sonic_to_laser' build argument 'cmake_clean_cache' from command line to 'False'
+[1.394s] Level 5:colcon.colcon_core.verb:set package 'sonic_to_laser' build argument 'cmake_clean_first' from command line to 'False'
+[1.394s] Level 5:colcon.colcon_core.verb:set package 'sonic_to_laser' build argument 'cmake_force_configure' from command line to 'False'
+[1.394s] Level 5:colcon.colcon_core.verb:set package 'sonic_to_laser' build argument 'ament_cmake_args' from command line to 'None'
+[1.394s] Level 5:colcon.colcon_core.verb:set package 'sonic_to_laser' build argument 'catkin_cmake_args' from command line to 'None'
+[1.394s] Level 5:colcon.colcon_core.verb:set package 'sonic_to_laser' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.394s] DEBUG:colcon.colcon_core.verb:Building package 'sonic_to_laser' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser', 'merge_install': False, 'path': '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/ultrasonic_to_lidar/src', 'symlink_install': False, 'test_result_base': None}
+[1.409s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.425s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.425s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/sonic2laser_map' with build type 'ament_cmake'
+[1.425s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/sonic2laser_map'
+[1.442s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.442s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.442s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.537s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/ultrasonic_to_lidar/src' with build type 'ament_cmake'
+[1.537s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/src/ultrasonic_to_lidar/src'
+[1.553s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.553s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.660s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic2laser_map': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic2laser_map -- -j12 -l12
+[1.665s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser -- -j12 -l12
+[1.733s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser -- -j12 -l12
+[1.769s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser
+[1.781s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sonic_to_laser)
+[1.782s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic_to_laser
+[1.799s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser' for CMake module files
+[1.800s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser' for CMake config files
+[1.800s] Level 1:colcon.colcon_core.shell:create_environment_hook('sonic_to_laser', 'cmake_prefix_path')
+[1.817s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/hook/cmake_prefix_path.ps1'
+[1.817s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/hook/cmake_prefix_path.dsv'
+[1.818s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/hook/cmake_prefix_path.sh'
+[1.818s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/lib'
+[1.819s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/bin'
+[1.819s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/lib/pkgconfig/sonic_to_laser.pc'
+[1.819s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/lib/python3.10/site-packages'
+[1.819s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/bin'
+[1.846s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/package.ps1'
+[1.847s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/package.dsv'
+[1.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/package.sh'
+[1.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/package.bash'
+[1.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/package.zsh'
+[1.851s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/colcon-core/packages/sonic_to_laser)
+[1.894s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sonic_to_laser)
+[1.909s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser' for CMake module files
+[1.910s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser' for CMake config files
+[1.910s] Level 1:colcon.colcon_core.shell:create_environment_hook('sonic_to_laser', 'cmake_prefix_path')
+[1.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/hook/cmake_prefix_path.ps1'
+[1.925s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/hook/cmake_prefix_path.dsv'
+[1.925s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/hook/cmake_prefix_path.sh'
+[1.926s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/lib'
+[1.926s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/bin'
+[1.926s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/lib/pkgconfig/sonic_to_laser.pc'
+[1.926s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/lib/python3.10/site-packages'
+[1.927s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/bin'
+[1.942s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/package.ps1'
+[1.942s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/package.dsv'
+[1.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/package.sh'
+[1.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/package.bash'
+[1.943s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/sonic_to_laser/package.zsh'
+[1.944s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic_to_laser/share/colcon-core/packages/sonic_to_laser)
+[2.730s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic2laser_map' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic2laser_map -- -j12 -l12
+[2.753s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic2laser_map': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic2laser_map
+[2.763s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sonic2laser_map)
+[2.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic2laser_map' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/zyme/ros_ws/sonic2laser/sonic_to_laser/build/sonic2laser_map
+[2.779s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map' for CMake module files
+[2.780s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map' for CMake config files
+[2.780s] Level 1:colcon.colcon_core.shell:create_environment_hook('sonic2laser_map', 'cmake_prefix_path')
+[2.795s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/sonic2laser_map/hook/cmake_prefix_path.ps1'
+[2.795s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/sonic2laser_map/hook/cmake_prefix_path.dsv'
+[2.796s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/sonic2laser_map/hook/cmake_prefix_path.sh'
+[2.796s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/bin'
+[2.796s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/lib/pkgconfig/sonic2laser_map.pc'
+[2.796s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/lib/python3.10/site-packages'
+[2.797s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/bin'
+[2.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/sonic2laser_map/package.ps1'
+[2.812s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/sonic2laser_map/package.dsv'
+[2.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/sonic2laser_map/package.sh'
+[2.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/sonic2laser_map/package.bash'
+[2.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/sonic2laser_map/package.zsh'
+[2.813s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/colcon-core/packages/sonic2laser_map)
+[2.850s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sonic2laser_map)
+[2.865s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map' for CMake module files
+[2.866s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map' for CMake config files
+[2.866s] Level 1:colcon.colcon_core.shell:create_environment_hook('sonic2laser_map', 'cmake_prefix_path')
+[2.881s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/sonic2laser_map/hook/cmake_prefix_path.ps1'
+[2.882s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/sonic2laser_map/hook/cmake_prefix_path.dsv'
+[2.882s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/sonic2laser_map/hook/cmake_prefix_path.sh'
+[2.882s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/bin'
+[2.882s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/lib/pkgconfig/sonic2laser_map.pc'
+[2.883s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/lib/python3.10/site-packages'
+[2.883s] Level 1:colcon.colcon_core.environment:checking '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/bin'
+[2.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/sonic2laser_map/package.ps1'
+[2.898s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/sonic2laser_map/package.dsv'
+[2.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/sonic2laser_map/package.sh'
+[2.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/sonic2laser_map/package.bash'
+[2.899s] INFO:colcon.colcon_core.shell:Creating package script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/sonic2laser_map/package.zsh'
+[2.900s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/sonic2laser_map/share/colcon-core/packages/sonic2laser_map)
+[2.900s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.900s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.900s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.901s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.925s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.926s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.926s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.936s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.952s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/local_setup.ps1'
+[2.953s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/_local_setup_util_ps1.py'
+[2.954s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/setup.ps1'
+[2.971s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/local_setup.sh'
+[2.971s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/_local_setup_util_sh.py'
+[2.972s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/setup.sh'
+[2.988s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/local_setup.bash'
+[2.989s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/setup.bash'
+[3.005s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/local_setup.zsh'
+[3.006s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/zyme/ros_ws/sonic2laser/sonic_to_laser/install/setup.zsh'
