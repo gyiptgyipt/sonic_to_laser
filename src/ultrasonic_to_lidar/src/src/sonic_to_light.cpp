@@ -17,7 +17,7 @@ public:
         laser_publisher_= this->create_publisher<sensor_msgs::msg::LaserScan>("/laser", 1000);
         
         sonic_subscriber = this->create_subscription<std_msgs::msg::Float32>(
-            "/sonar", 10, std::bind(&S2L_converter::sensor_callback, this, std::placeholders::_1));
+            "/sonar", 1000, std::bind(&S2L_converter::sensor_callback, this, std::placeholders::_1));
 
         tf_broadcaster_ = std::make_unique<tf2_ros::TransformBroadcaster>(this);
 
@@ -64,7 +64,9 @@ private:
 
         
         uint32_t ranges_size = std::ceil((laser.angle_max - laser.angle_min) / laser.angle_increment);
-        laser.ranges.assign(ranges_size,distance);
+        
+        //laser.ranges.assign(ranges_size,distance);
+        laser.ranges.assign(ranges_size-1,distance);
         laser.ranges.push_back(distance);
         // laser.ranges.resize(distance);
         // laser.intensities.resize(distance);
