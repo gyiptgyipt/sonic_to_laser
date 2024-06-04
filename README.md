@@ -86,4 +86,7 @@ rviz2
 -[YOUTUBE_VIDEO_LINK](https://www.youtube.com/shorts/Iqim6FD3cGk)
 
 
+
+Future plan - make odometry smooth and get low noises map. But because of the angle increment of sonic wave is 30 degrees, it should be only work in small area environment.
+
 ### Free to ask me anytime if something was wrong, I love to help you guys <3
